@@ -8,13 +8,16 @@ const ingredients = [
 ];
 
 
-for (const ingredient of ingredients) {
-const ingredientItem = document.createElement("li");
-ingredientItem.textContent = ingredient;
-ingredientItem.classList.add('item');
+//достукуємось до ul
+const ingredientsList = document.querySelector("#ingredients");
 
-const ingredientList = document.querySelector('ul#ingredients');
-  ingredientList.append(ingredientItem);
-};
-
+// створюэмо li, textContent, class "item"
+ const ingredientList = ingredients.map((ingredient) => {
+    const newIngredient = document.createElement("li");
+    newIngredient.textContent = ingredient;
+    newIngredient.classList.add("item");
+    return newIngredient;
+  });
+  // додаємо всі елементи в ul
+    ingredientsList.append(...ingredientList);
 

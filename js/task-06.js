@@ -4,9 +4,9 @@
 
 
 const input = document.querySelector('#validation-input');
-const length = Number(input.getAttribute(`data-length`));
+const length = Number(input.dataset.length);
 
-console.log(input, length, typeof length);
+// console.log(input, length, typeof length);
 
 input.addEventListener(`blur`, checkLengthOfInput);
 
@@ -19,7 +19,7 @@ function checkLengthOfInput () {
         input.classList.remove('invalid');
         input.classList.add('valid');
     }
-    console.log(input.value.length);
+    // console.log(input.value.length);
 };
 
 

@@ -5,13 +5,13 @@
 
 
 const input = document.querySelector('#name-input');
-console.log(input);
+// console.log(input);
 
 const output = document.querySelector('#name-output');
-console.log(output);
+// console.log(output);
 
 const defaultText = output.textContent;
-console.log(defaultText);
+// console.log(defaultText);
 
 
 input.addEventListener('input', textChange);

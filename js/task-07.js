@@ -4,10 +4,10 @@
 
 
 const input = document.querySelector('#font-size-control');
-console.log(input);
+// console.log(input);
 
 const text = document.querySelector('#text');
-console.log(text);
+// console.log(text);
 
 
 input.addEventListener('input', changeTextSize);
@@ -15,9 +15,9 @@ input.addEventListener('input', changeTextSize);
 
 function changeTextSize() {
     const sizeValue = input.value;
-    console.log(sizeValue);
+    // console.log(sizeValue);
  
-    text.style.fontSize = `${sizeValue}` + 'px';
+    text.style.fontSize = `${sizeValue}px`;
    
 };
 

@@ -6,7 +6,7 @@
 
 
 const loginForm = document.querySelector(".login-form");
-console.log(loginForm);
+// console.log(loginForm);
 
 
 loginForm.addEventListener("submit", checkForm);
@@ -17,13 +17,13 @@ function checkForm (event) {
     event.preventDefault();
 
     const formElements = event.currentTarget.elements;
-    console.log(formElements)
+    // console.log(formElements)
 
     const emailEl = formElements.email.value;
-    console.log(emailEl);
+    // console.log(emailEl);
 
     const passwordEl = formElements.password.value;
-    console.log(passwordEl);
+    // console.log(passwordEl);
 
     
     if (emailEl === '' || passwordEl === '') {
@@ -35,7 +35,7 @@ function checkForm (event) {
         passwordEl
     };
 
-    console.log(formData);
+    // console.log(formData);
 
     loginForm.reset();
 };
